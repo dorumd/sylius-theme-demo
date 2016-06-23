@@ -1,5 +1,8 @@
 services:
-  app.theme_request_listener:
-    class: AppBundle\Listener\ThemeRequestListener
-    tags:
-      - { name: kernel.request }
+    app.theme_request_listener:
+        class: AppBundle\Listener\ThemeRequestListener
+        arguments:
+            - '@sylius.repository.theme'
+            - '@sylius.context.theme'
+        tags:
+            - { name: kernel.request }

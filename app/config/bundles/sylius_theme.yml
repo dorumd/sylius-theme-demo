@@ -1,3 +1,7 @@
 sylius_theme:
     sources:
-        filesystem: ~
+        filesystem:
+            enabled: true
+            filename: composer.json
+            directories:
+                - "%kernel.root_dir%/../vendor/vendor"

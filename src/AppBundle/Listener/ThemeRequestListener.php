@@ -39,8 +39,10 @@ final class ThemeRequestListener
             return;
         }
 
+        dump($this->themeContext);
+
         $this->themeContext->setTheme(
-            $this->themeRepository->findByLogicalName('sylius/example-theme')
+            $this->themeRepository->findByLogicalName('vendor/sylius-theme-example')
         );
     }
 }

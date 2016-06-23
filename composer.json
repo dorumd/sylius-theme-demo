@@ -19,13 +19,20 @@
             "homepage": "http://github.com/Sylius/Sylius/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/dorumd/sylius-theme-example.git"
+        }
+    ],
     "require": {
         "php": "^5.6|^7.0",
 
         "sylius/sylius": "^0.19",
 
         "sensio/generator-bundle": "^2.3",
-        "sensio/distribution-bundle": "^3.0"
+        "sensio/distribution-bundle": "^3.0",
+	"vendor/sylius-theme-example": "dev-master"
     },
     "require-dev": {
         "behat/behat": "^3.0",
