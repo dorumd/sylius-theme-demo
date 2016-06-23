@@ -1,0 +1,5 @@
+services:
+  app.theme_request_listener:
+    class: AppBundle\Listener\ThemeRequestListener
+    tags:
+      - { name: kernel.request }
